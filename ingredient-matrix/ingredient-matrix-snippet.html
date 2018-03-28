@@ -1,0 +1,71 @@
+<!-- requires html doc setup -->
+
+
+{% require_script "pages/ingredient-matrix" %}  
+    
+<h1 class="jb-category-title">Jelly Belly Ingredient Matrix</h1>
+    
+<h3>Select fields below to find products which meet your criteria. (Note all products are "Peanut Free.")</h3>
+
+
+<div id="matrix-inputs">   
+
+	<fieldset>
+		<input class="matrix-checkbox" type="checkbox" id="is-peanut-free" name=".peanut-free"></input>
+		<label for="is-peanut-free">Peanut Free</label>
+	</fieldset>
+
+	<div>
+		<input class="matrix-checkbox" id="is-kosher" name=".kosher" type="checkbox" /input>
+		<label for="is-kosher">Kosher</label>
+	</div>
+	
+	<fieldset>
+		<input class="matrix-checkbox" id="is-gluten-free" name=".gluten-free" type="checkbox"  ></input>
+		<label for="is-gluten-free">Gluten Free</label>
+	</fieldset>
+
+<!--	<fieldset>
+		<input class="matrix-checkbox" type="checkbox" id="is-sugar-free" name=".sugar-free"></input>
+		<label for="is-sugar-free">Sugar Free</label>
+	</fieldset> -->
+
+	<fieldset>
+		<input class="matrix-checkbox" type="checkbox" id="is-treenut-free" name=".treenut-free"></input>
+		<label for="is-treenut-free">Tree Nut Free</label>
+	</fieldset>
+	
+	<fieldset>
+		<input class="matrix-checkbox" type="checkbox" id="is-soy-free" name=".soy-free"></input>
+		<label for="is-soy-free">Soy Free</label>
+	</fieldset>
+
+<!--	<fieldset>
+		<input class="matrix-checkbox" type="checkbox" id="is-nut-free" name=".nut-free"></input>
+		<label for="is-nut-free">Nut Free</label>
+	</fieldset> -->
+	
+</div>
+<br><br>
+
+<div id="matrix-results">
+	<!--
+	<div class="product-listing">
+		<a href="">
+			<img src="https://placebear.com/150/150" alt="placebear image">
+			<p>Old Product Name</p>
+		</a>
+	</div>
+	-->
+</div>
+
+<!--
+<br><br>
+<button id="hide-class">Hide Class</button>
+<br><br>
+<button id="show-class">Show Class</button>
+-->
+
+<style id="css-toggle"></style>
+<br><br>
+{% endblock body-content %}
