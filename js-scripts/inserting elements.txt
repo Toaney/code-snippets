@@ -1,0 +1,9 @@
+<script>
+  document.addEventListener("DOMContentLoaded", function(event) {
+    var guide = document.createElement('div');
+	guide.innerHTML = "test HTML code";
+	
+	var visual = document.getElementById("target id");
+	visual.appendChild(guide);
+  });
+</script>
