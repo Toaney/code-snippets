@@ -1,0 +1,7 @@
+<script>
+
+    document.addEventListener('DOMContentLoaded', function(){
+        document.getElementsByClassName("target class name")[0].innerHTML="replacement code"; 
+    });
+
+</script>
