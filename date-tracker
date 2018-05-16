@@ -1,0 +1,27 @@
+var today = new Date();
+console.log(today);
+
+	var date = today.getDate();
+  //console.log(date);
+  var month = today.getMonth();
+  //console.log(month);
+  var year = today.getYear();
+  //console.log(year); 
+  //this method has since been deprecated
+  //was useful in the 1900's when 1975 could be represented as just 75.
+  //.getFullYear() == .getYear + 1900
+  var yyyy = today.getFullYear();
+  //console.log(yyyy);
+
+if (date < 10) {
+	date = "0" + date;
+}
+
+if (month < 10) {
+	month = "0" + month;
+}
+
+console.log(month + "-" + date + "-" + yyyy);
+console.log(month + "/" + date + "/" + yyyy);
+console.log(date + "-" + month + "-" + yyyy);
+console.log(date + "/" + month + "/" + yyyy);
