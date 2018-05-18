@@ -1,0 +1,8 @@
+var num + Math.ceil(Math.random() + 10);
+var gnum = prompt('Pick a number between 1 and 10.')
+if (gnum == num){
+  alert('Matched');
+}else{
+  alert('Not matched. The number was ' + num);
+}
+  
