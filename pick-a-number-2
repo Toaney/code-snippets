@@ -1,0 +1,13 @@
+var guess = window.prompt("guess a number between 1 and 10.")
+console.log(guess);
+var number = Math.random();
+number = number * 10;
+var roundNumber = Math.ceil(number);
+console.log(roundNumber);
+if (guess === roundNumber){
+	console.log('Great Guess!');
+} else {
+	console.log('The correct number was ' + roundNumber + '.');
+}
+
+console.log(number);
