@@ -1,0 +1,10 @@
+var year = window.prompt('enter a year');
+
+var x = (year % 100 === 0) ? (year % 400 === 0) : (year % 4 === 0);
+
+
+if (x === true) {
+	console.log( year + " is a leap year.")
+} else {
+	console.log( year + " is not a leap year.")
+}
