@@ -1,0 +1,5 @@
+for ( i = 2014; i <= 2050; i++){
+	var x = new Date( i, 0, 1)
+  if (x.getDay() === 0 )
+  	console.log("in " + i + ", the first of January is a Sunday.")
+}
