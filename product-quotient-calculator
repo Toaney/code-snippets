@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+  <title>JS Exercises</title>
+</head>
+<body>
+  <div id="calculator-box">
+    <label for="number1">1st Number : </label><input id="number1" type="number" name="number1"><br><br>
+    <label for="number2">2nd Number: </label><input id="number2" type="number" name="number2"><br><br>
+    <button id="multiply">
+      Multiply
+    </button>
+    <button id="divide">
+      Divide
+    </button>
+  <p>The result is : <span id="result"></span>
+    
+  </p>
+  </div>
+</body>
+
+
+//CSS
+
+#calculator-box {
+  border: 1px solid black;
+  padding: 10px;
+}
+
