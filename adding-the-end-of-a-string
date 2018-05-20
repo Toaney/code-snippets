@@ -1,0 +1,16 @@
+function addEnding(string){
+
+if (string.length >= 3) {
+	var end = string.substring(string.length - 3);
+  
+	console.log(end + string + end)
+  
+} else {
+	console.log("Input string not long enough.");
+}
+
+}
+
+addEnding('abcde');
+addEnding('abc');
+addEnding('ab');
