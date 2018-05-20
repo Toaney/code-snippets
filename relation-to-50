@@ -1,0 +1,24 @@
+// collect inputs
+var num1 = Number(window.prompt("Enter a number."));
+var num2 = Number(window.prompt("Enter another number."));
+
+// if an input is 50
+if (num1 === 50 || num2 === 50) {
+	if (num1 === 50) {
+  	if (num2 === 50) {
+    	console.log("Both inputs were 50.")
+    } else {
+    	console.log("Your first input was 50.")
+    }
+  } else {
+  	console.log("Your second input was 50.")
+  }
+}
+
+// if the sum is 50
+else if ((num1 + num2) === 50 ){
+	console.log("The sum of your inputs is 50.")
+} else {
+// no relation to 50
+	console.log("your inputs had no relation to 50.")
+}
