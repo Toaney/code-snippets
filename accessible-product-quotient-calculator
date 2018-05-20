@@ -1,0 +1,30 @@
+function product(){
+var num1 = document.getElementById("number1").value;
+var num2 = document.getElementById("number2").value;
+
+document.getElementById("result").innerHTML = num1 * num2;
+}
+
+function quotient(){
+var num1 = document.getElementById("number1").value;
+var num2 = document.getElementById("number2").value;
+
+document.getElementById("result").innerHTML = num1 / num2;
+}
+
+
+document.getElementById("multiply").addEventListener("click", function(){
+	product();
+});
+
+document.getElementById("multiply").addEventListener("keypress", function(){
+	product();
+});
+
+document.getElementById("divide").addEventListener("click", function(){
+quotient();
+});
+
+document.getElementById("divide").addEventListener("keypress", function(){
+quotient();
+});
