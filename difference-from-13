@@ -1,0 +1,9 @@
+var userInput = window.prompt("enter a number")
+
+// if input is greater than 13
+if (userInput > 13) {
+	console.log((userInput - 13) * 2);
+} else {
+// if input is less than 13
+	console.log(userInput - 13);
+}
