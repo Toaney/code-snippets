@@ -1,0 +1,12 @@
+// test data
+var test1 = "someDocName.txt";
+var test2 = "anotherDocName.pdf";
+
+// function to do the work
+function docType(x) {
+  console.log(x.split(".").pop());
+}
+
+// test the function
+docType(test1);
+docType(test2);
