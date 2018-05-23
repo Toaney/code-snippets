@@ -1,0 +1,33 @@
+function isPalindrome(s){
+	s = s + "";
+  s = s.split("");
+  var left, right;
+  //console.log(s);
+  
+  if (s.length % 2 === 0){
+    left = s.splice(s[0], (s.length / 2));
+  	//console.log("left: " + left);
+  
+  	right = s.splice(((s.length / 2) - 1), s.length);
+  	//console.log("right: " + right);
+  
+  } else {
+  	left = s.splice(s[0], (s.length / 2));
+  	//console.log(left);
+  
+  	right = s.splice((s.length / 2), s.length);
+  	//console.log(right);
+  }
+  
+  if (left.join('') === right.reverse().join('')){
+  	console.log(true);
+  } else {
+  	console.log(false);
+  }
+  
+}
+
+isPalindrome('abcde');
+isPalindrome('aba');
+isPalindrome('12321');
+isPalindrome('level');
