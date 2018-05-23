@@ -1,0 +1,22 @@
+function longestWord(s) {
+	var longest;
+  
+  array1 = s.split(' ');
+  //console.log(array1);
+  longest = array1[0];
+  
+  for (var i = 0; i < array1.length; i++){
+  	if (array1[i].length > longest.length) {
+    	longest = array1[i];
+    }
+  
+  }
+
+	console.log(longest);
+}
+
+// test
+
+longestWord('hello world');
+longestWord('hello everybody');
+longestWord('this is a really really loooooooong word');
