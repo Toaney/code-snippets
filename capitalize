@@ -1,0 +1,13 @@
+function capitalize(s) {
+	var a = s.split(" ");
+  var newArray = [];
+  console.log(a);
+  for (i = 0; i < a.length; i++) {
+  	newArray.push(a[i].charAt(0).toUpperCase() + a[i].slice(1));
+  }
+  console.log(newArray.join(" "));
+}
+
+capitalize('hello');
+capitalize('he her him it');
+capitalize('he sold seashells by the seashore')
