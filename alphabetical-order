@@ -1,0 +1,9 @@
+function alphabeticalOrder(s){
+	s = s + '';
+  console.log(s.split("").sort().join(""));
+
+}
+
+alphabeticalOrder('aslfjaofj');
+alphabeticalOrder('bcdzsefwr');
+alphabeticalOrder('12425');
