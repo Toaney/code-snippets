@@ -1,0 +1,11 @@
+function reverseNumber(number){
+	console.log(typeof(number));
+  //turns a number into a string
+	number = number + "";
+  console.log(typeof(number));
+  //splits the string into an array, reverses the order, then rejoins the string
+  console.log(number.split("").reverse().join(""));
+}
+
+reverseNumber(1232423);
+reverseNumber(2323);
