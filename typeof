@@ -1,0 +1,18 @@
+function type(x) {
+	if (x.isNaN) {
+  	console.log("NaN");
+  } else {
+		console.log(typeof(x));
+	}
+}
+
+var test;
+//var testArray = [a, b, c];
+
+//type(testarray);
+type("abc");
+type(123);
+type({a:1, b:2});
+type(NaN);
+//type(test);
+type(true);
