@@ -1,0 +1,31 @@
+function vowelCounter(s) {
+	// prep the input
+	s = s + "";
+  array1 = s.split("");
+  console.log(array1);
+  
+  // create dictionary of vowels
+  var vowels = "AEIOUaeiou";
+  
+  // create vowel counter
+  var count = 0; 
+  
+  // iterate over input
+	for (var i = 0; i < array1.length; i++) {
+  	// count vowels
+    if ( vowels.indexOf(array1[i]) !== -1) {
+    	count = count + 1
+    }
+  
+  }
+  // return number of vowels
+	console.log("There are " + count + " vowels in " + s);
+
+}
+
+
+// test
+vowelCounter("blahblehbloop");
+vowelCounter("blah blah");
+vowelCounter("1234");
+vowelCounter(124124);
