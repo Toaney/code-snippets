@@ -1,0 +1,13 @@
+function larger(x, y) {
+	if (x === y){
+  	console.log("both inputs are equal")
+  } else if (x > y){
+  	console.log(x + " is larger than " + y);
+  } else {
+  	console.log(y + " is larger than " + x);
+  }
+}
+
+larger(12, 534);
+larger(23, 1);
+larger(234, 234);
