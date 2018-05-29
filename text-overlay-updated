@@ -59,12 +59,13 @@
 #text3 {
   position: absolute;
   right: 30px;
-  top: 250px;
+  bottom: 15px;
 }
 
 #text4 {
   position: absolute;
-  top: 125px;
-  left: 245px;
+  top: 50%;
+  width: 100%;
+  text-align: center;
   
 }
