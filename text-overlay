@@ -1,0 +1,70 @@
+// HTML 
+
+
+<br>
+<br>
+<br>
+<div id="parent">
+
+<img id="image" src="https://placebear.com/500/300">
+<p id="text">
+  top-left
+</p>
+<p id="text1">
+  top-right
+</p>
+<p id="text2">
+  bottom-left
+</p>
+<p id="text3">
+  bottom-right
+</p>
+<p id="text4">
+  center
+</p>
+</div>
+
+
+
+
+//CSS
+
+#parent {
+  position: relative;
+}
+
+#image {
+  opacity: .5;
+  position: relative;
+}
+
+#text {
+ position: absolute;
+ top: 0px;
+ left: 15px;
+}
+
+#text1 {
+  position: absolute;
+  top: 0px;
+  right: 30px;
+}
+
+#text2 {
+  position: absolute;
+  left: 15px;
+  top: 250px;
+}
+
+#text3 {
+  position: absolute;
+  right: 30px;
+  top: 250px;
+}
+
+#text4 {
+  position: absolute;
+  top: 125px;
+  left: 245px;
+  
+}
