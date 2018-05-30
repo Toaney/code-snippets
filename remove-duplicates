@@ -1,0 +1,31 @@
+/*
+bad code
+function removeDuplicates(array) {
+// brute force
+	//iterate over array1
+  //track all values we have seen in array2
+  //see if next value in array 1 equals anything in array2
+  //quadratic time complexity
+
+
+//create dictionary
+var tracker = [];
+	for (var i = 0; i < array.length; i++) {
+	//iterate through array1
+		if (array[i] != tracker[array[i]]) {
+    //check next value against our dictionary
+    	tracker.push(array[i]);
+    //add value to dictionary if it doesn' exist
+    } else {
+    //splice value from array 1 if it exists in our dictionary
+    	array.splice ... 
+    
+    }
+
+
+}
+
+
+}
+
+*/
