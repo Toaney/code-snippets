@@ -1,0 +1,13 @@
+//html
+
+<div class="triangle">
+</div>
+
+//css
+
+.triangle{
+  height: 0px;
+  width: 0px;
+  border: 10px solid transparent;
+  border-bottom: 20px solid #ff0000;
+}
