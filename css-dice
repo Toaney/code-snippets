@@ -1,0 +1,46 @@
+//html
+
+<div class="outer">
+  <div class="circle inner">
+  </div>
+  <div class="circle inner1">
+  </div>
+  <div class="circle inner2">
+  </div>
+</div>
+
+//css
+
+.outer {
+  border: 2px solid #000;
+  border-radius: 10px;
+  height: 200px;
+  width: 200px;
+  position: relative;
+}
+
+.circle {
+  background-color: #333;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  position: absolute;
+}
+
+.inner{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);  
+}
+
+.inner1{
+  top: 25%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+}
+
+.inner2{
+  top: 75%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+}
