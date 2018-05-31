@@ -1,0 +1,9 @@
+//arrays don't have a max or min method, but we can us the apply() Method to use the Math object's methods on arrays
+
+
+Math.max.apply(null, [1,2,3]);
+
+Math.min.apply(null, [1,2,3]);
+
+// the first parameter (null) would normally be the object we would pass to the function before the apply method, but we
+// don't need it here so we input null
