@@ -1,0 +1,16 @@
+function isPalindrome(input) {
+var temp = input.split('').reverse().join('');
+
+if( temp === input) {
+	console.log('is palindrome');
+} else {
+	console.log('is not a palindrome');
+}
+}
+
+
+
+
+isPalindrome('level');
+isPalindrome('abcdedcba');
+isPalindrome('chrome');
