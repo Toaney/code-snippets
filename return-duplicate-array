@@ -1,0 +1,18 @@
+function findDup(array) {
+	var obj = {},
+  	dupArray = [],
+		len = array.length;
+  for(var i = 0; i < len; i++) {
+		if(!obj[array[i]]){
+    	console.log('record input');
+    	obj[array[i]] = 1;
+
+    } else {
+    	console.log('duplicate found')
+      dupArray.push(array[i]);
+    }
+  }
+  return dupArray;
+}
+
+console.log(findDup([1,2,3,4,5,7,9,12,15,16,17,2,1,19,23,4,34]));
