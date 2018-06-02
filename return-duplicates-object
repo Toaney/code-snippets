@@ -1,0 +1,21 @@
+function findDup(array){
+	var dict = {},
+  dupArray={},
+  len = array.length;
+  
+  for(var i = 0; i < len; i++){
+  	if(!dict[array[i]]){
+    	dict[array[i]] = array[i];
+    } else {
+    		if(!dupArray[array[i]]){
+    			dupArray[array[i]] = 1;
+        } else {
+        	dupArray[array[i]] += 1;
+        }
+    }
+  }
+  return dupArray;
+}
+
+console.log(findDup([1,2,3,4,5,6,7,8,9,3,2,2,4,7,2,2,75,34,24,75,34,24,42]));
+
