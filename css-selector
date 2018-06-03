@@ -1,0 +1,36 @@
+//css
+
+
+p:not(:nth-child(2)) {
+  color: #0000ff;
+}
+
+
+//html
+
+<div>
+  <ul typeoflist="disk">
+  <li>
+    one
+  </li>
+    <li>
+    two
+  </li>
+    <li>
+    three
+  </li>
+  </ul>
+
+  <p>
+  text1
+  </p>
+    <p>
+  text2
+  </p>
+    <p>
+  text3
+  </p>
+    <p>
+  text4
+  </p>
+</div>
