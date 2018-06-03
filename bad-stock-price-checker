@@ -1,0 +1,31 @@
+function maximumProfit(array){
+//set variables
+	var minPrice = array[0],
+  	maxProfit = array[1] - array[0],//check this for initial value
+    len = array.length;
+//minimum price
+//maximum profit
+//iterate through array
+	for(var i = 0; i < len; i++){
+  	if((array[i] < minPrice) && ((array[i] - minPrice) > maxProfit)){
+    	minPrice = array[i];
+      maxProfit = array[i] - minPrice;
+    }
+    console.log("didn't iterate");
+  
+  }
+	//check if lowest price
+  
+  //check if maximum profit
+
+//return maximum profit
+	console.log('max profit = ' + maxProfit);
+
+}
+
+
+  stock_prices_yesterday = [10, 7, 5, 8, 11, 9];
+  
+  
+  
+  console.log(maximumProfit(stock_prices_yesterday));
