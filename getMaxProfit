@@ -1,0 +1,23 @@
+function getMaxProfit(array){
+//initialize variables
+  var minPrice = array[0],
+    maxPrice = array[0],
+    maxProfit = array[1] - array[0];
+
+  //iterate through array
+  for(var i = 0; i < array.length; i++){
+
+  //check profit
+    if((array[i] - minPrice) > maxProfit){
+      maxProfit = array[i] - minPrice;
+    }
+  //check min price
+    if(array[i] < minPrice){
+      minPrice = array[i];
+    }
+}
+//return maxProfit
+  return maxProfit;
+}
+
+console.log(getMaxProfit([10, 7, 5, 8, 11, 9]));
