@@ -1,0 +1,41 @@
+function getPalindromes(array){
+//initialize variables
+	var allPalindromes = [],
+  	smalestPalindromes = {};
+
+
+
+//helper function to check palindrome
+	function isPalindrome(input){
+  	if(input.length > 2){
+      var reversed = input.split('').reverse().join('');
+      if(input === reversed){
+        return true;
+      } else {
+        return false;
+      }
+    } else {
+    	return false;
+    }
+  }
+	console.log(isPalindrome('aba'));
+
+//find 3 letter palindromes
+
+	for(var i = 0; i<array.length; i++){
+  	var tempSplice = array.splice( i, i + 2);
+    if(isPalindrome(tempSplice)){
+    	smallestPalindromes.push(i, i+ 2);
+    }
+  }
+  console.log("smallest palindromes = " + smallestPalindromes);
+
+//helper function to check if palindrome exists outside already identified palindrome
+
+
+//return palindromes
+
+
+}
+
+getPalindromes('abcdecdcbcabc');
