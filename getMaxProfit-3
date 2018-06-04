@@ -1,0 +1,32 @@
+function getMaxProfit(array){
+//initialize variables
+  var minPrice = array[0],
+    maxPrice = array[0],
+    maxProfit = array[1] - array[0];
+
+  //iterate through array
+  if(array.length < 2){
+  	console.log("invalid input");
+    return;
+  }
+  for(var i = 0; i < array.length; i++){
+
+  //check profit
+    if((array[i] - minPrice) > maxProfit){
+    	if(i !== 0){
+      maxProfit = array[i] - minPrice;
+      }
+    }
+    //refactor to maxProfit = Math.max(maxProfit, (array[i] - minPrice))
+    
+  //check min price
+    if(array[i] < minPrice){
+      minPrice = array[i];
+    }
+    //refactor to minPrice = Math.min(minPrice, array[i]);
+}
+//return maxProfit
+  return maxProfit;
+}
+
+console.log(getMaxProfit([10, 8, 5, 3, 1]));
