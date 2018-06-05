@@ -1,0 +1,39 @@
+function palindromeFinder(array){
+	var palindromeArray = [],
+  	tempString = array;
+
+//helper function palindromeChecker
+	function isPalindrome(input) {
+  	if(input.length > 2){
+      var reversed = input.split('').reverse().join('');
+      if(input === reversed){
+        return true;
+      } else {
+        return false;
+      }
+    } return false;
+  }
+
+console.log(isPalindrome('aba'));
+//while loop to iterate through array
+	while (tempString.length > 0){
+  	var testString = '';
+//for loop to iterate through array
+		//check palindrome  
+  	for(var i = 0; i < tempString.length; i++){
+    	var spliced = tempString.slice(i, tempString.length);
+      testString += tempString[i];
+      if(isPalindrome(testString)){
+      	palindromeArray.push(testString);
+      }
+    }
+    
+   tempString = tempString.slice(1, tempString.length);
+  }
+//close while loop
+	return palindromeArray;
+		//push to array
+}
+
+
+console.log(palindromeFinder('abbbbbcdefgfecpcp'));
