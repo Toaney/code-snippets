@@ -1,0 +1,36 @@
+function palindromeFinder(array){
+	var palindromeArray = [],
+  	tempString = array;
+
+//helper function palindromeChecker
+	function isPalindrome(input) {
+  	var reversed = input.split('').reverse().join('');
+  	if(input === reversed){
+    	return true;
+    } else {
+    	return false;
+    }
+  }
+
+console.log(isPalindrome('aba'));
+//while loop to iterate through array
+	while (tempString.length > 0){
+  
+//for loop to iterate through array
+		//check palindrome  
+  	for(var i = 0; i < tempString.length; i++){
+    	var spliced = tempString.slice(i, tempString.length);
+      if(isPalindrome(spliced)){
+      	palindromeArray.push(spliced);
+      }
+    }
+    
+   tempString = tempString.slice(1, tempString.length);
+  }
+//close while loop
+	return palindromeArray;
+		//push to array
+}
+
+
+console.log(palindromeFinder('abbbcdefgfecpcp'));
