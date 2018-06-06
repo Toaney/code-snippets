@@ -1,0 +1,10 @@
+var money = [1, 2, 4, 56, 23, 34, 2, 5, 2, 4];
+
+var dollars = money.map( function(x){
+		return "$" + x;
+}
+)
+
+console.log(dollars);
+
+console.log(dollars.join(" "));
