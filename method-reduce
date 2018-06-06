@@ -1,0 +1,20 @@
+var money = [1, 2, 4, 56, 23, 34, 2, 5, 2, 4];
+
+var sum = money.reduce( function(accumulator, currentValue) {
+	return accumulator + currentValue;
+})
+
+console.log(sum);
+
+var product = money.reduce(function(accumulator, currentValue){
+	return accumulator * currentValue;
+})
+
+console.log(product);
+
+var logMonies = money.reduce(function(accumulator, currentValue){
+	var monies = accumulator + currentValue;
+	console.log(monies);
+  return accumulator + currentValue;
+
+})
