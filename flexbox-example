@@ -1,0 +1,60 @@
+//html
+
+<div class="container">
+  <div class="item">
+    -1 text text text text text text
+  </div>
+  <div class="item">
+    0 text text text text text text text text text text
+  </div>
+    <div class="item">
+    1 text text text text text text text
+  </div>
+    <div class="item">
+    2 text text text text text text text text text text
+  </div>
+    <div class="item item3">
+    3 text text text text text
+  </div>
+  <div class="item">
+    4 text text text text text text
+  </div>
+  <div class="item">
+    5 text text text text text text text text text text
+  </div>
+    <div class="item item6">
+    6 text text text text text text text
+  </div>
+    <div class="item">
+    7 text text text text text text text text text text
+  </div>
+    <div class="item">
+    8 text text text text text
+  </div>
+</div>
+
+
+//css
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: stretch;
+}
+
+.item{
+  background-color: #aaa;
+  width: 70px;
+  margin: 5px;
+  padding: 5px;
+  order: 5;
+}
+
+.item3{
+  align-self: flex-start;
+}
+
+.item6{
+  align-self: flex-end;
+}
+
