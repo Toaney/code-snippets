@@ -1,0 +1,30 @@
+var array = [];
+
+function fib(n) {
+	//initialize variables
+	//recursion to calc fib number
+		function help(pos){
+    	counter += 1;
+      console.log("counter: " + counter);
+    	if(array[pos]){
+      	console.log('position exists');
+      	return array[pos];
+      }
+    	if(pos < 2){
+      	array[pos] = pos;
+      } else {
+      	array[pos] = help(pos - 1) + help(pos - 2);
+      }
+      return array[pos];
+    }
+	//return 
+  return help(n);
+}
+
+
+console.log(fib(8));
+console.log(array);
+console.log("start 5");
+console.log(fib(5));
+
+
