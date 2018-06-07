@@ -1,0 +1,26 @@
+function findDuplicates(array){
+//initialize variables
+	var dict = {};
+  var duplicates = {}
+
+
+//iterate over array
+	for(var i = 0; i < array.length ; i++){
+  	if(dict[array[i]]){
+        dict[array[i]] = dict[array[i]] + 1;
+        if(duplicates[array[i]]){
+        duplicates[array[i]]  += 1;
+        } else {
+        duplicates[array[i]]  = 2;
+        }
+    } else {
+    	dict[array[i]] = 1;
+    }
+  }
+
+//return results
+	return duplicates;
+
+}
+
+console.log(findDuplicates([6, 34, 2, 56, 2, 4, 2, 6]));
