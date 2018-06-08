@@ -1,0 +1,75 @@
+//https://gist.github.com/rlynjb/4daa009d9b65421608f9#file-chunky-monkey-js
+
+
+// Chunky monkey
+function chunk(input, len) {
+	var finalArray = [];
+  for(var i = 0; i < input.length; i += len){
+  	finalArray.push(input.slice(i, i + len));
+  }
+  console.log(finalArray);
+}
+chunk([1, 2, 3, 4, 7, 3, 5], 2);
+
+// Confirm the ending
+function doubleCheck(input, target){
+	var position = input.lastIndexOf(target);
+  var len = input.length
+  if(position){
+  	if(input.substring(position, len) === target){
+    	return true;
+    }
+    return false;
+  }
+  return false;
+}
+
+console.log(doubleCheck("hello you there", "you"));
+
+
+//factorial
+function factorial(n){
+	var total = 1;
+  while(n > 0){
+  	total = total * n;
+    n--;
+  }
+	return total;
+}
+
+console.log(factorial(5));
+
+//Falsy Bouncer
+function agreableArray(array){
+	var finalArray = [];
+  var falsyArray = [];
+  
+  for(var i = 0; i < array.length; i++){
+  	if (Boolean(array[i])){
+    	finalArray.push(array[i]);
+    } else {
+    	falsyArray.push(array[i]);
+    }
+  }
+  console.log(falsyArray);
+	return finalArray;
+}
+
+console.log(agreableArray([false, {} ,true, [], 1, "false", -5, null, undefined, '', false, {a:1, b:2}, null, undefined, 0, NaN, 'hello']));
+ 
+ 
+function truthyFunc(x){
+	if(x == true){
+  	return true;
+  }
+  return false;
+}
+console.log(truthyFunc({"a":"1", "b":"2"}));
+
+console.log(Boolean({1:3, 4:2, 6:2}));
+
+
+
+
+
+
