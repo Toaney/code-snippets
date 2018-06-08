@@ -1,0 +1,81 @@
+function longestWord(string){
+	var longest = 0,
+  	wordArray = string.split(' ');
+    
+    console.log(wordArray.length);
+    
+    for(var i = 0; i < wordArray.length; i++){
+    	if(wordArray[i].length > longest){
+      	longest = wordArray[i].length;
+      }
+    }
+	return longest;
+}
+
+console.log(longestWord("I am hungry"));
+
+
+//mutations
+function lettersEnveloped([check, letters]){
+	for(var i = 0; i < letters.length; i++){
+  	if (check.indexOf(letters[i]) === -1){
+    	return false;
+    }
+  }
+	return true;
+}
+
+console.log(lettersEnveloped(['zyxwvutsrqponmlkjihgfedcba', 'qrstu']));
+
+
+// repeat a string repeat a string
+
+function repeater(string, n){
+	var response = '';
+  
+  if(n >= 0){
+  	for(var i = 0; i < n; i++){
+    	response = response + string;
+    }
+  }
+	return response;
+}
+
+console.log(repeater('hello', 5));
+
+var word = "hello";
+console.log(word.repeat(3));
+
+/*
+// access extra arguments
+function extraArgs(a, b){
+	console.log(arguments[0]);
+  	console.log(arguments[1]);
+    	console.log(arguments[2]);
+      	console.log(arguments[3]);
+        	console.log(arguments[4]);
+	var total = 0;
+	for(var i = 0; i < arguments.length; i++){
+  	total = total + arguments[i];
+  }
+	return total;
+}
+
+console.log(extraArgs(1, 2, 3, 4));
+*/
+
+
+function extraArgs(a, b){
+	var arrayMax = [];
+	for(var i = 0; i < arguments.length; i++){
+  	arrayMax.push(Math.max.apply(Math, arguments[i]));
+  }
+	return Math.max.apply(Math, arrayMax);
+}
+
+console.log(extraArgs([4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]));
+
+
+
+
+
