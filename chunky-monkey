@@ -1,0 +1,11 @@
+function chunk(input, len) {
+	var finalArray = [];
+  for(var i = 0; i < input.length; i += len){
+  	finalArray.push(input.slice(i, i + len));
+  }
+  console.log(finalArray);
+}
+
+
+
+chunk([1, 2, 3, 4, 7, 3, 5], 2);
