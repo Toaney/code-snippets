@@ -102,3 +102,28 @@ Loop through the ca array (i = 0; i < ca.length; i++), and read out each value c
 If the cookie is found (c.indexOf(name) == 0), return the value of the cookie (c.substring(name.length, c.length).
 
 If the cookie is not found, return "".
+
+
+
+
+//function to check cookie
+
+A Function to Check a Cookie
+Last, we create the function that checks if a cookie is set.
+
+If the cookie is set it will display a greeting.
+
+If the cookie is not set, it will display a prompt box, asking for the name of the user, and stores the username cookie for 365 days, by calling the setCookie function:
+
+Example
+function checkCookie() {
+    var username = getCookie("username");
+    if (username != "") {
+        alert("Welcome again " + username);
+    } else {
+        username = prompt("Please enter your name:", "");
+        if (username != "" && username != null) {
+            setCookie("username", username, 365);
+        }
+    }
+}
