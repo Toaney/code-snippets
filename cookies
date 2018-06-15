@@ -42,3 +42,22 @@ document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
 You should define the cookie path to ensure that you delete the right cookie.
 
 Some browsers will not let you delete a cookie if you don't specify the path.
+
+
+// function to set cookie
+
+A Function to Set a Cookie
+First, we create a function that stores the name of the visitor in a cookie variable:
+
+Example
+function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires="+ d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+Example explained:
+
+The parameters of the function above are the name of the cookie (cname), the value of the cookie (cvalue), and the number of days until the cookie should expire (exdays).
+
+The function sets a cookie by adding together the cookiename, the cookie value, and the expires string.
