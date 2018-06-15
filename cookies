@@ -44,6 +44,7 @@ You should define the cookie path to ensure that you delete the right cookie.
 Some browsers will not let you delete a cookie if you don't specify the path.
 
 
+
 // function to set cookie
 
 A Function to Set a Cookie
@@ -61,3 +62,43 @@ Example explained:
 The parameters of the function above are the name of the cookie (cname), the value of the cookie (cvalue), and the number of days until the cookie should expire (exdays).
 
 The function sets a cookie by adding together the cookiename, the cookie value, and the expires string.
+
+
+
+
+//function to get cookie
+
+A Function to Get a Cookie
+Then, we create a function that returns the value of a specified cookie:
+
+Example
+function getCookie(cname) {
+    var name = cname + "=";
+    var decodedCookie = decodeURIComponent(document.cookie);
+    var ca = decodedCookie.split(';');
+    for(var i = 0; i <ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+}
+Function explained:
+
+Take the cookiename as parameter (cname).
+
+Create a variable (name) with the text to search for (cname + "=").
+
+Decode the cookie string, to handle cookies with special characters, e.g. '$'
+
+Split document.cookie on semicolons into an array called ca (ca = decodedCookie.split(';')).
+
+Loop through the ca array (i = 0; i < ca.length; i++), and read out each value c = ca[i]).
+
+If the cookie is found (c.indexOf(name) == 0), return the value of the cookie (c.substring(name.length, c.length).
+
+If the cookie is not found, return "".
