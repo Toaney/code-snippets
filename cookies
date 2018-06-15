@@ -22,3 +22,23 @@ With JavaScript, cookies can be read like this:
 var x = document.cookie;
 document.cookie will return all cookies in one string much like: cookie1=value; cookie2=value; cookie3=value;
 
+
+// Change a Cookie with JavaScript
+With JavaScript, you can change a cookie the same way as you create it:
+
+document.cookie = "username=John Smith; expires=Thu, 18 Dec 2013 12:00:00 UTC; path=/";
+The old cookie is overwritten.
+
+
+
+// Delete a Cookie with JavaScript
+Deleting a cookie is very simple.
+
+You don't have to specify a cookie value when you delete a cookie.
+
+Just set the expires parameter to a passed date:
+
+document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+You should define the cookie path to ensure that you delete the right cookie.
+
+Some browsers will not let you delete a cookie if you don't specify the path.
